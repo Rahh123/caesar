@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Encryption</title>
+    <link rel="stylesheet" href="caesar.css">
+    <script src="caesar.js"></script>
+</head>
+<body>
+    <h1>The Caesar Code</h1>
+    <div class="gridcontainer">
+        <div id="ptoc">
+            <div id="ptoc-plaintext">
+                <h3>Enter your plaintext here.</h3>
+                
+                <textarea name="ptoc-plain" id="ptoc-plain" cols="30" rows="10"></textarea>
+            </div>
+            <div class="shiftrange">Enter the shift. <input type="range" name="ptoc-shift" id="ptoc-shift" value="10" min="1" max="26" oninput="this.nextElementSibling.value = this.value; encryptCaesar();">
+                <output>10</output>
+            </div>
+            <button onclick="encryptCaesar()">Encrypt!</button>
+            <h3>The encrypted text will be shown below</h3>
+            <div id="ptoc-ciphertext" class="outputbox">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

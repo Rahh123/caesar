@@ -1,0 +1,26 @@
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.outputbox {
+    min-height: 20vh;
+    width: 20vw;
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+}
+
+#ptoc {
+    background-color: lightcyan;
+    padding: 10px;
+    margin: 5px;
+    width: 30vw;
+}
+
+#ctop {
+    background-color: lightpink;
+    padding: 10px;
+    margin: 5px;
+    width: 30vw;
+}
